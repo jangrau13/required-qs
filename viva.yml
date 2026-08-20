@@ -1,0 +1,21 @@
+version: 1
+assignment: required-qs
+
+goals:
+  - id: exactly-once
+    level: evaluate
+    goal: >
+      Judge whether your consumer delivers each job exactly once, and defend
+      the answer against a crash between any two of your statements.
+
+  - id: redelivery
+    level: analyse
+    goal: >
+      Trace what your code does the second time the queue hands you the same
+      message, and say which of your writes happen twice.
+
+  - id: the-boundary
+    level: analyse
+    goal: >
+      Work out which of the systems you touch can be made atomic together and
+      which cannot, and where that puts the line.
